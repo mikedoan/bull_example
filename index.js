@@ -4,6 +4,7 @@ const { sendChallenge } = require("./producers");
 const _ = require("lodash");
 
 const gradingService = new Queue("gradingService", {
+  // Bao fai chi redis rieng cua em. ca'i nay la localhost cua anh.
   redis: {
     host: "127.0.0.1",
     port: 6379
